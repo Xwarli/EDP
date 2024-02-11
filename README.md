@@ -20,3 +20,5 @@ For example, e^930 is not prime, but by incrementing m, we discoveer that the cl
 1 million digit primes roughly start at n = 250000. 
 
 Provided without warrenty. Crashes when it runs out of RAM! 
+
+Created by Marley Sexton, 2024. 
