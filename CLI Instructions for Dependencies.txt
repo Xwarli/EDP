@@ -1,0 +1,37 @@
+# MAIN DEPENDENCIES ARE mpmath and sympy.
+# On controlled systems, these can be installed with the pip command, or via Anaconda. 
+#
+#-------------------------------------------------
+#- MANAGED ENVIROMENTS
+#-------------------------------------------------
+# Installing dependencies and running the script on managed enviroments (such as digital ocean) 
+# where pip doesn't work is a little more complex, but there is an easy workaround.
+
+# First update and check python 3 and git are installed
+
+apt upgrade
+apt update
+apt-get install python3
+apt-get install git
+
+# First install mpmath, but rather then git clone, take directly from PyPi link
+
+wget https://files.pythonhosted.org/packages/e0/47/dd32fa426cc72114383ac549964eecb20ecfd886d1e5ccf5340b55b02f57/mpmath-1.3.0.tar.gz
+tar -xvzf mpmath-1.3.0.tar.gz
+cd mpmath-1.3.0
+python3 setup.py install
+
+# Then simply clone and install sympy
+
+cd ../
+git clone https://github.com/sympy/sympy.git
+cd sympy
+python3 setup.py install
+
+# Then clone this repositry
+
+cd ../
+git clone https://github.com/Xwarli/EDP.git
+
+# use vim or nano to edit, or run as is:
+# python3 EDP_script.py
