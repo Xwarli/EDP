@@ -13,9 +13,9 @@ The full process is as follows:
 2. Calculate e^n, and then floor the value
 3. Check if e^n is prime (if so, start with a new value of n)
 4. if e^n is not prime, then test (e^n)+m and (e^n)-m, where m starts at 1 if e^n is even, and 2 if e^n is odd.
-5. If (e^n)+m and *e^n)-m is not prime, increment m by 2, and then reattempt until a prime is found.
+5. If (e^n)+m and (e^n)-m is not prime, increment m by 2, and then reattempt until a prime is found.
 
-For example, e^930 is not prime, but by incrementing m, we discoveer that the closest prime is e^930-301 (404 digits)
+For example, e^930 is not prime, but by incrementing m, we discover that the closest prime is e^930-301 (404 digits)
 
 1 million digit primes roughly start at n = 250000. 
 
